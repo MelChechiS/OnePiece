@@ -5,10 +5,13 @@ export default function Principal() {
   return (
     <main>
       <nav>
-          <img src={logo} alt="Logo de One Piece"></img>
+        <div className={styles.logo}>
+        <img src={logo} alt="Logo de One Piece"></img>
+        </div>
+        
         <header className={styles.header}>
           <div className={styles.header__text}>
-            "Apresentando o Anime: One Piece!"
+            "One Piece!"
           </div>
           </header>
       </nav>
