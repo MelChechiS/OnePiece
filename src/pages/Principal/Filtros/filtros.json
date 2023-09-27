@@ -1,0 +1,22 @@
+[
+  {
+      "id": 1,
+      "label": "Luffy"
+  },
+  {
+      "id": 2,
+      "label": "Nami"
+  },
+  {
+      "id": 3,
+      "label": "Usopp"
+  },
+  {
+      "id": 4,
+      "label": "Zoro"
+  },
+  {
+      "id": 5,
+      "label": "Sanji"
+  }
+]

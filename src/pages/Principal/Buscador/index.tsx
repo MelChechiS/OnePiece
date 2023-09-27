@@ -1,20 +1,22 @@
-import styles from "../Buscador/Principal.module.scss";
-import logo from "../assets/logo.png";
+import styles from '../Buscador/Principal.module.scss'
+import { CgSearch } from 'react-icons/cg'
 
-export default function Principal() {
-  return (
-    <main>
-      <nav>
-        <div className={styles.logo}>
-        <img src={logo} alt="Logo de One Piece"></img>
+interface Props {
+    busca: string,
+    setBusca: React.Dispatch<React.SetStateAction<string>>
+}
+
+export default function Buscador({busca, setBusca}: Props) {
+    return(
+        <div className={styles.buscador}>
+            <input
+                value={busca}
+                onChange={(evento) => setBusca(evento.target.value)}
+            />
+            <CgSearch
+                size={20}
+                color='#4c4d5e'
+            />
         </div>
-        
-        <header className={styles.header}>
-          <div className={styles.header__text}>
-            "One Piece!"
-          </div>
-          </header>
-      </nav>
-    </main>
-  );
+    )
 }
